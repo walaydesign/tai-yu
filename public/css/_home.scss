@@ -255,12 +255,6 @@
   }
   &-btns {
     button {
-      width: 42px;
-      height: 42px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: $primary-400;
       position: absolute;
       top: 50%;
       border-radius: 50%;
@@ -273,9 +267,6 @@
         &-next {
           right: 0;
         }
-      }
-      span {
-        font-size: 24px;
       }
       &:hover {
         background-color: $secondary-700;

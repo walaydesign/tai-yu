@@ -78,7 +78,7 @@ main {
   overflow: hidden;
   min-height: calc(100vh - 61px);
   padding-top: 258px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 991px) {
     padding-top: 64px;
   }
 }
@@ -205,6 +205,11 @@ ul {
           a {
             padding: 8px 16px;
             text-align: center;
+            color: $dark-300;
+            &:hover,
+            &.active {
+              color: $secondary-700;
+            }
           }
           &::before {
             position: absolute;
@@ -232,7 +237,7 @@ ul {
         padding: 20px 0;
         &.active,
         &:hover {
-          color: $dark-300;
+          color: $primary-400;
         }
         &.has-child {
           padding-right: 18px;
@@ -604,4 +609,170 @@ ul {
       }
     }
   }
+}
+
+.title-common {
+  margin: 0 auto 60px;
+  font-weight: 700;
+  color: $secondary-700;
+  font-size: 60px;
+  padding: 0 60px;
+  position: relative;
+  width: fit-content;
+  position: relative;
+  &::before,
+  &::after {
+    position: absolute;
+    font-size: 60px;
+    font-weight: 700;
+    color: $secondary-700;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &::before {
+    content: "[";
+    left: 0;
+  }
+  &::after {
+    content: "]";
+    right: 0;
+  }
+  @media screen and (max-width: 991px) {
+    font-size: 40px;
+    padding: 0 40px;
+    margin-bottom: 32px;
+    &::before, &::after {
+      font-size: 40px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    font-size: 28px;
+    margin-bottom: 20px;
+    &::before, &::after {
+      font-size: 28px;
+    }
+  }
+}
+
+.text-common {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.7;
+  @media screen and (max-width: 991px) {
+    font-size: 28px;
+  }
+  @media screen and (max-width: 575px) {
+    font-size: 18px;
+  }
+}
+
+.slider-btn {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-400;
+  span {
+    font-size: 24px;
+  }
+  &:hover {
+    background-color: $secondary-700;
+    border-color: $secondary-700;
+  }
+  &.swiper-button-disabled {
+    background-color: $dark-50;
+  }
+}
+
+.breadcrumb {
+  padding: 24px 0;
+  background-color: $primary-50;
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  a {
+    color: #5d9365;
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    &.active {
+      color: #727171;
+    }
+  }
+  li {
+    padding-right: 54px;
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 22px;
+      background-image: url(../img/arrow-right.svg);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      top: 50%;
+      right: 22px;
+      transform: translateY(-50%);
+    }
+    &:last-child {
+      padding-right: 0;
+      &:after {
+        display: none;
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    padding: 12px 0;
+    a {
+      font-size: 16px;
+    }
+    li {
+      padding-right: 28px;
+      &::after {
+        width: 6px;
+        height: 12px;
+        right: 11px;
+      }
+    }
+  }
+}
+
+.pagination {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    a {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        font-weight: 500;
+        color: $primary-400;
+        &.active {
+            background-color: $primary-400;
+            color: $white;
+        }
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+    >ul {
+        display: flex;
+    }
+    &_arrow {
+        span {
+            font-size: 12px;
+            &::before {
+                color: $primary-600;
+            }
+        }
+    }
 }
