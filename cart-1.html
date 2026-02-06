@@ -80,106 +80,124 @@
       </nav>
     </header>
     <main class="main">
-      <div class="account">
-        <div class="container">
-          <div class="account-sidebar">
-            <nav class="account-sidebar_nav">
-              <ul>
-                <li><a href="">會員資料修改</a></li>
-                <li><a href="">修改密碼</a></li>
-                <li><a href="" class="active">訂單查詢</a></li>
-                <li><a href="">登出會員</a></li>
-              </ul>
-            </nav>
+      <div class="cart">
+        <div class="cart-step">
+          <div class="cart-step_item active">
+            <div class="cart-step_num">
+              <p>1</p>
+            </div>
+            <p class="cart-step_text">確認<br class="d-sm-none">購物清單</p>
           </div>
-          <div class="account-content">
-            <div class="account-order">
-              <div class="container">
-                <table>
-                  <tr>
-                    <th>訂單日期</th>
-                    <th>訂單編號</th>
-                    <th>付款方式</th>
-                    <th>付款金額</th>
-                    <th>訂單狀態</th>
-                    <th>取消訂單</th>
-                  </tr>
-                  <tr>
-                    <td>2026-01-02</td>
-                    <td>123456789</td>
-                    <td>ATM轉帳</td>
-                    <td>1340</td>
-                    <td>未付款, 未出貨, 處理中</td>
-                    <td>
-                      <div class="account-order_func">
-                        <button class="btn btn-alert">取消</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2026-01-02</td>
-                    <td>123456789</td>
-                    <td>ATM轉帳</td>
-                    <td>1340</td>
-                    <td>未付款, 未出貨, 處理中</td>
-                    <td>
-                      <div class="account-order_func">
-                        <button class="btn btn-alert">取消</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2026-01-02</td>
-                    <td>123456789</td>
-                    <td>ATM轉帳</td>
-                    <td>1340</td>
-                    <td>未付款, 未出貨, 處理中</td>
-                    <td>
-                      <div class="account-order_func">
-                        <button class="btn btn-alert">取消</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2026-01-02</td>
-                    <td>123456789</td>
-                    <td>ATM轉帳</td>
-                    <td>1340</td>
-                    <td>未付款, 未出貨, 處理中</td>
-                    <td>
-                      <div class="account-order_func">
-                        <button class="btn btn-alert">取消</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2026-01-02</td>
-                    <td>123456789</td>
-                    <td>ATM轉帳</td>
-                    <td>1340</td>
-                    <td>未付款, 未出貨, 處理中</td>
-                    <td>
-                      <div class="account-order_func">
-                        <button class="btn btn-alert">取消</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2026-01-02</td>
-                    <td>123456789</td>
-                    <td>ATM轉帳</td>
-                    <td>1340</td>
-                    <td>未付款, 未出貨, 處理中</td>
-                    <td>
-                      <div class="account-order_func">
-                        <button class="btn btn-alert">取消</button>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
+          <div class="cart-step_item">
+            <div class="cart-step_num">
+              <p>2</p>
+            </div>
+            <p class="cart-step_text">填寫<br class="d-sm-none">訂購資料</p>
+          </div>
+          <div class="cart-step_item">
+            <div class="cart-step_num">
+              <p>3</p>
+            </div>
+            <p class="cart-step_text">完成購物</p>
+          </div>
+        </div>
+        <div class="account-order cart-detail">
+          <div class="container">
+            <table>
+              <tr>
+                <th>商品名稱</th>
+                <th>單價</th>
+                <th>數量</th>
+                <th>小記</th>
+                <th>刪除</th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="" class="cart-product">
+                    <div class="cart-product__pic">
+                      <img src="./public/img/product-1.webp" alt="" />
+                    </div>
+                    <p class="cart-product__name">
+                      零錢包-小巧收納，大容量體驗
+                    </p>
+                  </a>
+                </td>
+                <td>NT$1280</td>
+                <td>
+                  <div class="form-item">
+                    <select name="" id="">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+                  </div>
+                </td>
+                <td>NT$1280</td>
+                <td>
+                  <div class="account-order_func">
+                    <button class="btn btn-alert">刪除</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="" class="cart-product">
+                    <div class="cart-product__pic">
+                      <img src="./public/img/product-1.webp" alt="" />
+                    </div>
+                    <p class="cart-product__name">
+                      零錢包-小巧收納，大容量體驗
+                    </p>
+                  </a>
+                </td>
+                <td>NT$1280</td>
+                <td>
+                  <div class="form-item">
+                    <select name="" id="">
+                      <option value="">1</option>
+                      <option value="">2</option>
+                      <option value="">3</option>
+                    </select>
+                  </div>
+                </td>
+                <td>NT$1280</td>
+                <td>
+                  <div class="account-order_func">
+                    <button class="btn btn-alert">刪除</button>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="cart-total">
+          <div class="container">
+            <p>共2件商品，金額 <strong>NT$5000</strong></p>
+            <p>運費 <strong>NT$5000</strong></p>
+            <div class="cart-total__price">
+              <p>總計</p>
+              <p class="price">NT$5000</p>
+            </div>
+          </div>
+        </div>
+        <div class="cart-form">
+          <div class="container">
+            <h2 class="cart-form__title">運送方式</h2>
+            <div class="cart-form__wrapper">
+              <div class="form-item form-item--radio">
+                <input type="radio" name="shipping" id="ship-delivery" />
+                <label for="ship-delivery">宅配</label>
+              </div>
+              <div class="form-item form-item--radio">
+                <input type="radio" name="shipping" id="ship-store" />
+                <label for="ship-store">超商取貨</label>
               </div>
             </div>
           </div>
+        </div>
+        <div class="cart-btn">
+            <a href="" class="btn btn-border">繼續購物</a>
+            <a href="" class="btn btn-border">確認結帳</a>
         </div>
       </div>
     </main>
