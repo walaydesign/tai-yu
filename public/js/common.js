@@ -47,3 +47,16 @@ $(".header__nav>ul>li>a").click(function () {
     }
   }
 });
+
+ $(".form-item--password button").click(function () {
+   if ($(this).hasClass("open-eye")) {
+     $(this).removeClass("open-eye");
+     $(this)
+       .parents(".form-item--password")
+       .find("input")
+       .attr("type", "password");
+   } else {
+     $(this).addClass("open-eye");
+     $(this).parents(".form-item--password").find("input").attr("type", "text");
+   }
+ });

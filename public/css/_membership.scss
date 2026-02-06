@@ -1,0 +1,251 @@
+.membership-table {
+  position: relative;
+  table {
+    width: 100%;
+    overflow: hidden;
+    border-collapse: inherit;
+    border-spacing: 24px 0;
+    tr {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: $secondary-700;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    th,
+    td {
+      width: 20%;
+      text-align: center;
+      span {
+        display: block;
+      }
+      .highlight {
+        color: $brown;
+      }
+    }
+    td {
+      padding: 16px 8px;
+      font-size: 20px;
+      &.membership-table-title {
+        padding: 32px 12px;
+        font-weight: 500;
+        font-size: 36px;
+        letter-spacing: 0.2em;
+        text-align: center;
+      }
+      &.empty {
+        span {
+          width: 62px;
+          height: 3px;
+          border-radius: 3px;
+          background-color: $secondary-700;
+          margin: 0 auto;
+        }
+      }
+      &:not(.membership-table-title) {
+        &:nth-child(even) {
+          background-color: $primary-50;
+        }
+        &:nth-child(odd) {
+          background-color: $primary-200;
+        }
+      }
+    }
+  }
+  &-head {
+    padding: 30px 12px;
+    &__title {
+      font-size: 36px;
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+    &__icon {
+      width: 180px;
+      margin: 0 auto;
+    }
+  }
+  &-title-mobile {
+    width: 156px;
+    background-color: $white !important;
+    top: 2px;
+    left: 0;
+    position: absolute;
+    padding: 0 !important;
+    display: none;
+    z-index: 5;
+    p {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: $secondary-700;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    &__head {
+      font-size: 20px;
+      font-weight: 700;
+      align-items: flex-end;
+    }
+    &__body {
+      padding: 16px;
+      align-items: center;
+      background-color: $white;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .container {
+      max-width: inherit;
+      position: relative;
+    }
+    &__wrapper {
+      overflow-x: auto;
+      width: 100%;
+    }
+    table {
+      width: 800px;
+      border-spacing: 12px 0;
+      td {
+        padding: 12px;
+        font-size: 16px;
+        &.membership-table-title {
+          padding: 16px;
+        }
+      }
+    }
+    &-title {
+      width: 156px !important;
+    }
+    &-head {
+      padding: 20px 12px;
+      &__title {
+        font-size: 16px;
+      }
+      &__icon {
+        width: 80px;
+      }
+    }
+    &-title-mobile {
+      display: block;
+    }
+  }
+}
+
+.membership-list {
+  li {
+    margin-bottom: 76px;
+    padding-left: 42px;
+    position: relative;
+    font-size: 36px;
+    font-weight: 500;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background-color: $secondary-700;
+      top: 16px;
+      left: 0;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    li {
+      margin-bottom: 36px;
+      padding-left: 20px;
+      font-size: 18px;
+      &::before {
+        width: 12px;
+        height: 12px;
+        top: 8px;
+      }
+    }
+  }
+}
+
+.membership-rule {
+  p {
+    width: fit-content;
+    margin: 0 auto 36px;
+    font-size: 28px;
+    font-weight: 500;
+    padding: 20px 64px;
+    border-radius: 28px;
+    &:nth-child(odd) {
+      background-color: $primary-50;
+    }
+    &:nth-child(even) {
+      background-color: $primary-200;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    p {
+      margin-bottom: 20px;
+      font-size: 20px;
+      padding: 12px 24px;
+      border-radius: 16px;
+    }
+  }
+}
+
+.membership-qa {
+  padding-bottom: 132px;
+  &-item {
+    display: flex;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.7;
+    &__title {
+      width: 90px;
+    }
+    &__content {
+      width: calc(100% - 90px);
+    }
+  }
+  &__line {
+    margin-top: 64px;
+    width: 324px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondary-700;
+    color: $white;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    &:hover {
+      background-color: $primary-400;
+      color: $secondary-700;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    padding-bottom: 64px;
+    &-item {
+      font-size: 18px;
+      &__title {
+        width: 44px;
+      }
+      &__content {
+        width: calc(100% - 44px);
+      }
+    }
+    &__line {
+      margin-top: 32px;
+      width: 240px;
+      height: 30px;
+      font-size: 14px;
+    }
+  }
+}

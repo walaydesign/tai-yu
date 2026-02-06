@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>肽悠生計</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/css/jquery-ui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./public/icomoon/style.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <a href="./index.html" class="header__logo"
+          ><img src="./public/img/logo.svg" alt=""
+        /></a>
+        <div class="header__func">
+          <div class="header-func-item header-account">
+            <span class="icon-account"></span>
+            <p>會員名稱</p>
+            <nav class="header-account-nav">
+              <ul>
+                <li><a href="">會員資料修改</a></li>
+                <li><a href="">修改密碼</a></li>
+                <li><a href="">訂單查詢</a></li>
+                <li><a href="">登出會員</a></li>
+              </ul>
+            </nav>
+          </div>
+          <a href="" class="header-func-item">
+            <span class="icon-cart-1"></span>
+          </a>
+          <div class="header-searchbar">
+            <div class="header-searchbar__input">
+              <button class="header-searchbar__close">
+                <span class="icon-x"></span>
+              </button>
+              <input type="text" placeholder="請輸入關鍵字" />
+            </div>
+            <button class="header-searchbar__search">
+              <span class="icon-search"></span>
+            </button>
+          </div>
+          <button class="header__menu d-lg-none">
+            <div class="bar bar-top"></div>
+            <div class="bar bar-middle"></div>
+            <div class="bar bar-bottom"></div>
+          </button>
+        </div>
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li>
+            <a class="has-child">品牌理念</a>
+            <ul>
+              <li><a href="">品牌理念</a></li>
+              <li><a href="">安心保證</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" class="has-child">所有商品</a>
+            <ul>
+              <li><a href="">商品1</a></li>
+              <li><a href="">商品2</a></li>
+            </ul>
+          </li>
+          <li><a href="">會員機制</a></li>
+          <li><a href="">加入會員</a></li>
+          <li><a href="">肽美生活知識庫</a></li>
+          <li><a href="">聯絡我們</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="account">
+        <div class="container">
+          <div class="account-sidebar">
+            <nav class="account-sidebar_nav">
+              <ul>
+                <li><a href="">會員資料修改</a></li>
+                <li><a href="">修改密碼</a></li>
+                <li><a href="" class="active">訂單查詢</a></li>
+                <li><a href="">登出會員</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="account-content">
+            <div class="information">
+            <a href="" class="btn btn-border">回上頁</a>
+              <div class="information-sec">
+                <h2 class="information-sec__title">訂單資訊</h2>
+                <table class="information-table">
+                  <tr>
+                    <td class="information-table__title">訂單編號</td>
+                    <td class="information-table__content">123456789</td>
+                  </tr>
+                  <tr>
+                    <td class="information-table__title">訂單日期</td>
+                    <td class="information-table__content">2026/01/01</td>
+                  </tr>
+                  <tr>
+                    <td class="information-table__title">商品金額</td>
+                    <td class="information-table__content">$1234</td>
+                  </tr>
+                  <tr>
+                    <td class="information-table__title">付款方式</td>
+                    <td class="information-table__content">ATM轉帳</td>
+                  </tr>
+                  <tr>
+                    <td class="information-table__title">運費</td>
+                    <td class="information-table__content">60</td>
+                  </tr>
+                  <tr>
+                    <td class="information-table__title">訂單狀態</td>
+                    <td class="information-table__content">
+                      未付款, 未出貨, 處理中
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="information-table__title">付款金額</td>
+                    <td class="information-table__content">1234元</td>
+                  </tr>
+                  <tr>
+                    <td class="information-table__title">運送方式</td>
+                    <td class="information-table__content">宅配</td>
+                  </tr>
+                  <tr>
+                    <td class="information-table__title">備註</td>
+                    <td class="information-table__content">備註</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="information-sec">
+                <h2 class="information-sec__title">收件人資訊</h2>
+                <table class="information-table">
+                  <tr>
+                    <td class="information-table__title">收件人</td>
+                    <td class="information-table__content">名稱</td>
+                  </tr>
+                  <tr>
+                    <td class="information-table__title">性別</td>
+                    <td class="information-table__content">女</td>
+                  </tr>
+                  <tr>
+                    <td class="information-table__title">電話</td>
+                    <td class="information-table__content">0987654321</td>
+                  </tr>
+                  <tr>
+                    <td class="information-table__title">地址</td>
+                    <td class="information-table__content">
+                      地址地址地址地址地址地址地址地址
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="information-sec">
+                <h2 class="information-sec__title">購物明細</h2>
+                <div class="buy-detail">
+                  <div class="container">
+                    <table>
+                      <tr>
+                        <th>購買項目</th>
+                        <th>單價</th>
+                        <th>數量</th>
+                      </tr>
+                      <tr>
+                        <td>零錢包-小巧收納，大容量體驗</td>
+                        <td>$500</td>
+                        <td>5</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footer-col">
+              <h3 class="footer-title">關於我們</h3>
+              <ul class="contact-list">
+                <li><a href="">品牌理念</a></li>
+                <li>肽悠生技有限公司</li>
+                <li>統一編號｜60610092</li>
+              </ul>
+              <img class="footer-logo" src="./public/img/logo.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-col">
+              <h3 class="footer-title">顧客服務</h3>
+              <ul class="contact-list">
+                <li><a href="">運送服務方式</a></li>
+                <li><a href="">退換貨政策</a></li>
+                <li><a href="">條款與細則</a></li>
+                <li><a href="">條款與細則</a></li>
+                <li><a href="">隱私權政策</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-col">
+              <h3 class="footer-title">聯絡我們</h3>
+              <ul class="contact-list">
+                <li>服務時間｜週一至週五 10:00-18:00</li>
+                <li>E-mail｜taiyu99999@gmail.com</li>
+                <li class="d-lg-block d-none"><br /></li>
+                <li>地址｜臺中市西區民龍里臺灣大道二段186號14樓之1</li>
+                <li>統一編號｜60610092</li>
+              </ul>
+              <div class="contact-social">
+                <a href=""><span class="icon-fb-1"></span></a>
+                <a href=""><span class="icon-ig"></span></a>
+                <a href=""><span class="icon-line-1"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="./public/js/twzipcode/jquery.twzipcode.js"></script>
+    <script src="./public/js/common.js"></script>
+  </body>
+</html>

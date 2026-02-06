@@ -1,3 +1,15 @@
+.knowledge-date {
+  width: fit-content;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 8px;
+  border-bottom: 1px solid $primary-400;
+  @media screen and (max-width: 991px) {
+    font-size: 14px;
+    padding-bottom: 4px;
+  }
+}
+
 .knowledge-list {
   padding-top: 76px;
   padding-bottom: 64px;
@@ -12,7 +24,7 @@
     padding: 0;
     margin-bottom: 16px;
     &::after {
-        display: none;
+      display: none;
     }
   }
   &__wrapper {
@@ -21,7 +33,7 @@
     padding: 72px 0;
     border-bottom: 1px solid $secondary-700;
     &:last-child {
-        border: 0;
+      border: 0;
     }
     &:nth-child(even) {
       .knowledge-list {
@@ -29,7 +41,7 @@
           padding-left: 120px;
         }
         &-pic {
-            border-radius: 156px 0 0 156px;
+          border-radius: 156px 0 0 156px;
         }
       }
     }
@@ -68,29 +80,22 @@
       font-weight: 900;
     }
     &__intro {
-        font-size: 20px;
-        font-weight: 100;
-        line-height: 2;
-        letter-spacing: 0.2em;
-        margin-bottom: 44px;
-    }
-    &__date {
-        width: fit-content;
-        font-size: 15px;
-        font-weight: 500;
-        padding-bottom: 8px;
-        border-bottom: 1px solid $primary-400;
+      font-size: 20px;
+      font-weight: 100;
+      line-height: 2;
+      letter-spacing: 0.2em;
+      margin-bottom: 44px;
     }
   }
   @media screen and (max-width: 991px) {
-  padding-top: 36px;
-  &__title {
-    margin-bottom: 12px;
-    font-size: 14px;
-  }
-  .title {
-    font-size: 48px;
-  }
+    padding-top: 36px;
+    &__title {
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+    .title {
+      font-size: 48px;
+    }
     &__wrapper {
       flex-direction: column;
       padding: 40px 0;
@@ -120,10 +125,114 @@
       &__intro {
         font-size: 16px;
       }
-      &__date {
-        font-size: 14px;
-        padding-bottom: 4px;
-      }
     }
   }
+}
+
+.knowledge-detail {
+    padding-top: 72px;
+    padding-bottom: 124px;
+    &__title {
+        text-align: center;
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    .knowledge-date {
+        margin: 0 auto 72px;
+    }
+    &__wrapper {
+        display: flex;
+    }
+    &-content {
+        width: calc(100% - 300px);
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 2;
+        letter-spacing: 0.075em;
+        padding-right: 20px;
+        ul {
+            li {
+                position: relative;
+                padding-left: 24px;
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 16px;
+                    height: 16px;
+                    background-image: url(../img/list-check.svg);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    top: 50%;
+                    left: 0;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+    &-side {
+        width: 300px;
+        padding-left: 72px;
+        border-left: 1px solid $secondary-700;
+        h2 {
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 28px;
+        }
+        ul {
+            a {
+                font-size: 24px;
+                font-weight: 500;
+                .num {
+                    color: $primary-400;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 991px) {
+    padding-top: 36px;
+    padding-bottom: 64px;
+    &__title {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .knowledge-date {
+        margin: 0 auto 36px;
+    }
+    &__wrapper {
+        flex-direction: column;
+    }
+    &-content {
+        width: 100%;
+        font-size: 16px;
+        padding: 0;
+        padding-bottom: 40px;
+        ul {
+            li {
+                padding-left: 16px;
+                &::before {
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+    &-side {
+        width: 100%;
+        padding: 20px 0 0;
+        border-left: 0;
+        border-top: 1px solid $secondary-700;
+        h2 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+        ul {
+            a {
+                font-size: 18px;
+            }
+        }
+    }
+        
+    }
 }

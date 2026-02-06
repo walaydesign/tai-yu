@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/css/jquery-ui/jquery-ui.min.css" />
     <link rel="stylesheet" href="./public/icomoon/style.css" />
     <link rel="stylesheet" href="./public/css/style.css" />
   </head>
@@ -22,10 +23,18 @@
           ><img src="./public/img/logo.svg" alt=""
         /></a>
         <div class="header__func">
-          <a href="" class="header-func-item">
+          <div class="header-func-item header-account">
             <span class="icon-account"></span>
-            <p>會員登入</p>
-          </a>
+            <p>會員名稱</p>
+            <nav class="header-account-nav">
+              <ul>
+                <li><a href="">會員資料修改</a></li>
+                <li><a href="">修改密碼</a></li>
+                <li><a href="">訂單查詢</a></li>
+                <li><a href="">登出會員</a></li>
+              </ul>
+            </nav>
+          </div>
           <a href="" class="header-func-item">
             <span class="icon-cart-1"></span>
           </a>
@@ -65,73 +74,63 @@
           </li>
           <li><a href="">會員機制</a></li>
           <li><a href="">加入會員</a></li>
-          <li><a href="" class="active">肽美生活知識庫</a></li>
+          <li><a href="">肽美生活知識庫</a></li>
           <li><a href="">聯絡我們</a></li>
         </ul>
       </nav>
     </header>
     <main class="main">
-      <div class="banner">
-        <img src="./public/img/knowledge-banner.webp" alt="" />
-      </div>
-      <div class="knowledge-list">
+      <div class="account">
         <div class="container">
-          <p class="knowledge-list__title">文章列表</p>
-          <h1 class="title">New knowledge</h1>
-        </div>
-        <div class="container">
-          <a href="" class="knowledge-list__wrapper">
-            <div class="knowledge-list-pic">
-              <img src="./public/img/knowledge-pic-1.webp" alt="" />
+          <div class="account-sidebar">
+            <nav class="account-sidebar_nav">
+              <ul>
+                <li><a href="" class="active">會員資料修改</a></li>
+                <li><a href="">修改密碼</a></li>
+                <li><a href="">訂單查詢</a></li>
+                <li><a href="">登出會員</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="account-content">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-item">
+                  <input type="email" placeholder="信箱" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-item">
+                  <input type="number" placeholder="手機號碼" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-item">
+                  <input type="text" placeholder="中文全名" />
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-item">
+                  <input
+                    type="text"
+                    placeholder="生日"
+                    id="birthday"
+                    class="datepicker"
+                  />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-address">
+                  <label for="">聯絡地址</label>
+                  <div id="twzipcode" class="twzipcode"></div>
+                  <div class="form-item">
+                    <input type="text" placeholder="詳細地址" />
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="knowledge-list-text">
-              <h3 class="knowledge-list-text__title">
-                「為什麼私密要用專用清潔？」
-              </h3>
-              <p class="knowledge-list-text__intro">
-                你知道嗎？<br />
-                我們每天洗臉、洗頭都會用專用產品，<br />
-                但最親密、最敏感的地方——<br />
-                其實更需要「專屬呵護」。<br />
-                很多人以為用沐浴乳就可以一瓶搞定，<br />
-                但這樣的清潔，其實可能正在破壞你的防護力。
-              </p>
-              <p class="knowledge-date">2025-11-10</p>
-            </div>
-          </a>
-          <a href="" class="knowledge-list__wrapper">
-            <div class="knowledge-list-pic">
-              <img src="./public/img/knowledge-pic-2.webp" alt="" />
-            </div>
-            <div class="knowledge-list-text">
-              <h3 class="knowledge-list-text__title">
-                私密健康，其實從腸道開始
-              </h3>
-              <p class="knowledge-list-text__intro">
-                你知道嗎？<br />
-                多數女性的私密困擾，<br />
-                其實不只是清潔問題，而是「菌叢失衡」造成的。<br />
-                而這個平衡，最根本的關鍵，<br />
-                其實藏在我們的腸道裡。
-              </p>
-              <p class="knowledge-date">2025-11-10</p>
-            </div>
-          </a>
-        </div>
-        <div class="pagination">
-          <a href="" class="pagination_arrow">
-            <span class="icon-arrow-left"></span>
-          </a>
-          <ul>
-            <li><a href="" class="active">1</a></li>
-            <li><a href="">2</a></li>
-            <li><a href="">3</a></li>
-            <li><a href="">4</a></li>
-            <li><a href="">5</a></li>
-          </ul>
-          <a href="" class="pagination_arrow">
-            <span class="icon-arrow-right"></span>
-          </a>
+            <button class="form-btn btn-fill">確認修改</button>
+          </div>
         </div>
       </div>
     </main>
@@ -186,6 +185,14 @@
     <script src="./public/js/jquery/jquery.min.js"></script>
     <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="./public/js/twzipcode/jquery.twzipcode.js"></script>
     <script src="./public/js/common.js"></script>
+    <script>
+      $(function () {
+        $("#birthday").datepicker();
+      });
+      $("#twzipcode").twzipcode({});
+    </script>
   </body>
 </html>

@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>肽悠生計</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Rowdies:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/icomoon/style.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <a href="./index.html" class="header__logo"
+          ><img src="./public/img/logo.svg" alt=""
+        /></a>
+        <div class="header__func">
+          <a href="" class="header-func-item">
+            <span class="icon-account"></span>
+            <p>會員登入</p>
+          </a>
+          <a href="" class="header-func-item">
+            <span class="icon-cart-1"></span>
+          </a>
+          <div class="header-searchbar">
+            <div class="header-searchbar__input">
+              <button class="header-searchbar__close">
+                <span class="icon-x"></span>
+              </button>
+              <input type="text" placeholder="請輸入關鍵字" />
+            </div>
+            <button class="header-searchbar__search">
+              <span class="icon-search"></span>
+            </button>
+          </div>
+          <button class="header__menu d-lg-none">
+            <div class="bar bar-top"></div>
+            <div class="bar bar-middle"></div>
+            <div class="bar bar-bottom"></div>
+          </button>
+        </div>
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li>
+            <a class="has-child">品牌理念</a>
+            <ul>
+              <li><a href="">品牌理念</a></li>
+              <li><a href="">安心保證</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="" class="has-child">所有商品</a>
+            <ul>
+              <li><a href="">商品1</a></li>
+              <li><a href="">商品2</a></li>
+            </ul>
+          </li>
+          <li><a href="" class="active">會員機制</a></li>
+          <li><a href="">加入會員</a></li>
+          <li><a href="">肽美生活知識庫</a></li>
+          <li><a href="">聯絡我們</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="intro-section">
+        <div class="container">
+          <h2 class="title-common">會員制度</h2>
+          <h3 class="title">Membership Descripion</h3>
+          <div class="membership-table">
+            <div class="membership-table__wrapper">
+              <table>
+                <tr>
+                  <th class="membership-table-title"></th>
+                  <th>
+                    <div class="membership-table-head">
+                      <img
+                        class="membership-table-head__icon"
+                        src="./public/img/level-1.svg"
+                        alt=""
+                      />
+                      <p class="membership-table-head__title">一般會員</p>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="membership-table-head">
+                      <img
+                        class="membership-table-head__icon"
+                        src="./public/img/level-2.svg"
+                        alt=""
+                      />
+                      <p class="membership-table-head__title">VIP</p>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="membership-table-head">
+                      <img
+                        class="membership-table-head__icon"
+                        src="./public/img/level-3.svg"
+                        alt=""
+                      />
+                      <p class="membership-table-head__title">VVIP</p>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="membership-table-head">
+                      <img
+                        class="membership-table-head__icon"
+                        src="./public/img/level-4.svg"
+                        alt=""
+                      />
+                      <p class="membership-table-head__title">VVVIP</p>
+                    </div>
+                  </th>
+                </tr>
+                <tr>
+                  <td class="membership-table-title">
+                    <span>入會禮金</span>
+                  </td>
+                  <td>
+                    <span
+                      >入會即享有<br /><span class="highlight"
+                        >禮金＄100</span
+                      ></span
+                    >
+                  </td>
+                  <td class="empty">
+                    <span></span>
+                  </td>
+                  <td class="empty">
+                    <span></span>
+                  </td>
+                  <td class="empty">
+                    <span></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="membership-table-title">
+                    <span>會員期限</span>
+                  </td>
+                  <td>
+                    <span>永久會籍</span>
+                  </td>
+                  <td>
+                    <span>12個月</span>
+                  </td>
+                  <td>
+                    <span>12個月</span>
+                  </td>
+                  <td>
+                    <span>12個月</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="membership-table-title">
+                    <span>升級門檻</span>
+                  </td>
+                  <td>
+                    <span>
+                      12 個月內<br />
+                      累積消費<br />
+                      <span class="highlight">滿 ＄5000</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      12 個月內<br />
+                      累積消費<br />
+                      <span class="highlight">滿 ＄10000</span>
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      12 個月內<br />
+                      累積消費<br />
+                      <span class="highlight">滿 ＄20000</span>
+                    </span>
+                  </td>
+                  <td class="empty">
+                    <span></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="membership-table-title">
+                    <span>續等條件</span>
+                  </td>
+                  <td class="empty">
+                    <span></span>
+                  </td>
+                  <td>
+                    <span>
+                      期間消費<br />
+                      <span class="highlight">滿 ＄5000 </span>
+                      即續會成功
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      期間消費<br />
+                      <span class="highlight">滿 ＄10000 </span>
+                      即續會成功
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      期間消費<br />
+                      <span class="highlight">滿 ＄20000 </span>
+                      即續會成功
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="membership-table-title">
+                    <span>生日禮金</span>
+                  </td>
+                  <td>
+                    <span>100元</span>
+                  </td>
+                  <td>
+                    <span>150元</span>
+                  </td>
+                  <td>
+                    <span>250元</span>
+                  </td>
+                  <td>
+                    <span>300元</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="membership-table-title">
+                    <span>特殊禮金</span>
+                  </td>
+                  <td class="empty">
+                    <span></span>
+                  </td>
+                  <td>
+                    <span>
+                      不定期驚喜<br />
+                      （發放購物金或折扣碼）
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      不定期驚喜<br />
+                      （發放購物金或折扣碼）
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      不定期驚喜<br />
+                      （發放購物金或折扣碼）
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="membership-table-title">
+                    <span>推薦禮金</span>
+                  </td>
+                  <td>
+                    <span>
+                      <span class="highligth">100元</span>
+                      （入會消費成功完成後歸戶）
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <span class="highligth">100元</span>
+                      （入會消費成功完成後歸戶）
+                    </span>
+                  </td>
+                  <td>
+                    <span>
+                      <span class="highligth">100元</span>
+                      （入會消費成功完成後歸戶）
+                    </span>
+                  </td>
+                  <td class="color-blue">
+                    <span>
+                      <span class="highligth">100元</span>
+                      （入會消費成功完成後歸戶）
+                    </span>
+                  </td>
+                </tr>
+              </table>
+
+              <div class="membership-table-title-mobile">
+                <p class="membership-table-title-mobile__head"></p>
+                <div>
+                  <p class="membership-table-title-mobile__body">入會禮金</p>
+                  <p class="membership-table-title-mobile__body">會員期限</p>
+                  <p class="membership-table-title-mobile__body">升級門檻</p>
+                  <p class="membership-table-title-mobile__body">續等條件</p>
+                  <p class="membership-table-title-mobile__body">生日禮金</p>
+                  <p class="membership-table-title-mobile__body">特殊禮金</p>
+                  <p class="membership-table-title-mobile__body">推薦禮金</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="intro-section">
+        <div class="container">
+          <h2 class="title-common">會員升級方式</h2>
+          <h3 class="title">
+            Membership upgrade<br />
+            method
+          </h3>
+          <ul class="membership-list">
+            <li>
+              系統會累計會員的消費金額來進行會員升級，當累積金額達到升級指定門檻，
+              系統將於付款完畢後隔日凌晨依照升級條件調整會員等級。
+            </li>
+            <li>
+              會員期間為 12
+              個月，起算日從會員升級生效當日開始計算，會籍到期後，則會
+              依照目前年度累積消費來重新調整會員等級。
+            </li>
+          </ul>
+          <div class="membership-rule">
+            <p>實際消費金額以官網每筆購物車之(扣除運費後)訂單金額結算。</p>
+            <p>
+              若取消訂單退款後累計金額未到等級門檻，將依實際累積消費金額，調整為相對應的會員分級。
+            </p>
+            <p>
+              超商付款取貨，將於付款後 5 個工作天內列入累積消費金額的會員等級。
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="intro-section">
+        <div class="container">
+          <h2 class="title-common">會員常見</h2>
+          <h3 class="title">Membership Q&A</h3>
+          <div class="membership-qa">
+            <div>
+              <div class="membership-qa-item">
+                <p class="membership-qa-item__title">Q1｜</p>
+                <p class="membership-qa-item__content">
+                  會員等級資格會一直維持嗎？
+                </p>
+              </div>
+              <div class="membership-qa-item">
+                <p class="membership-qa-item__title">A1｜</p>
+                <p class="membership-qa-item__content">
+                  會員資格將以 12 個月內累計消費金額來計算，若於會籍(12
+                  個月)到期前消費滿指定續會條件，即可延續會員資格與優惠一年。
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="membership-qa-item">
+                <p class="membership-qa-item__title">Q2｜</p>
+                <p class="membership-qa-item__content">
+                  回饋的點數及購物金何時會匯入到帳戶內？
+                </p>
+              </div>
+              <div class="membership-qa-item">
+                <p class="membership-qa-item__title">A2｜</p>
+                <p class="membership-qa-item__content">
+                  於官網付款完成後，會立即匯入至會員帳號，如需查詢目前可使用的點數
+                  及購物金，請至『 會員專區 』 > 『 商店購物金 』 即可查閱。
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="membership-qa-item">
+                <p class="membership-qa-item__title">Q3｜</p>
+                <p class="membership-qa-item__content">購物金有期限嗎？</p>
+              </div>
+              <div class="membership-qa-item">
+                <p class="membership-qa-item__title">A3｜</p>
+                <p class="membership-qa-item__content">
+                  生日購物金為發送日起算 30 天，會員日回饋為 60 天，推薦活動為
+                  90天。
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="membership-qa-item">
+                <p class="membership-qa-item__title">Q4｜</p>
+                <p class="membership-qa-item__content">
+                  要怎麼知道自己的等級，差多少金額可以升級？
+                </p>
+              </div>
+              <div class="membership-qa-item">
+                <p class="membership-qa-item__title">A4｜</p>
+                <p class="membership-qa-item__content">
+                  會員登入後可於個人資料顯示會員等級，以及距離下一會員等級所需的消費金額。
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="membership-qa-item">
+                <p class="membership-qa-item__title">Q5｜</p>
+                <p class="membership-qa-item__content">
+                  會員制度跟優惠會調整嗎？
+                </p>
+              </div>
+              <div class="membership-qa-item">
+                <p class="membership-qa-item__title">A5｜</p>
+                <p class="membership-qa-item__content">
+                  肽悠生技保有修改、變更或暫停會員活動之權利，會員相關制度及活動之
+                  修改、調整等採用「不溯及既往原則」 ，並將得隨時補充公告之。
+                </p>
+              </div>
+            </div>
+            <a href="" class="membership-qa__line">若有疑問請洽詢官方LINE</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="footer-col">
+              <h3 class="footer-title">關於我們</h3>
+              <ul class="contact-list">
+                <li><a href="">品牌理念</a></li>
+                <li>肽悠生技有限公司</li>
+                <li>統一編號｜60610092</li>
+              </ul>
+              <img class="footer-logo" src="./public/img/logo.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-col">
+              <h3 class="footer-title">顧客服務</h3>
+              <ul class="contact-list">
+                <li><a href="">運送服務方式</a></li>
+                <li><a href="">退換貨政策</a></li>
+                <li><a href="">條款與細則</a></li>
+                <li><a href="">條款與細則</a></li>
+                <li><a href="">隱私權政策</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-col">
+              <h3 class="footer-title">聯絡我們</h3>
+              <ul class="contact-list">
+                <li>服務時間｜週一至週五 10:00-18:00</li>
+                <li>E-mail｜taiyu99999@gmail.com</li>
+                <li class="d-lg-block d-none"><br /></li>
+                <li>地址｜臺中市西區民龍里臺灣大道二段186號14樓之1</li>
+                <li>統一編號｜60610092</li>
+              </ul>
+              <div class="contact-social">
+                <a href=""><span class="icon-fb-1"></span></a>
+                <a href=""><span class="icon-ig"></span></a>
+                <a href=""><span class="icon-line-1"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="" class="btn-fixed">
+       <span class="icon-line-2"></span>
+        <p>線上客服</p>
+    </a>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/common.js"></script>
+    <script>
+      tableHeight();
+
+      $(window).on("resize scroll", function () {
+        tableHeight();
+      });
+
+      function tableHeight() {
+        let thTitleHeight = $(
+          ".membership-table th.membership-table-title",
+        ).height();
+        console.log(thTitleHeight);
+        $(".membership-table-title-mobile__head").height(thTitleHeight);
+
+        let tdNum = $("td.membership-table-title").length;
+        for (let i = 0; i < tdNum; i++) {
+          let tdHeight = $("td.membership-table-title").eq(i).height();
+          $(".membership-table-title-mobile__body").eq(i).height(tdHeight);
+        }
+      }
+    </script>
+  </body>
+</html>
