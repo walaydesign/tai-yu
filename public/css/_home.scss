@@ -213,17 +213,17 @@
     &__title {
       margin-bottom: 16px;
       transition: $transition;
-      font-size: 32px;
+      font-size: 18px;
       font-weight: 700;
       margin-bottom: 8px;
     }
     &__price {
-      font-size: 26px;
+      font-size: 16px;
       margin-bottom: 0;
       transition: $transition;
     }
     &__origin {
-      font-size: 26px;
+      font-size: 16px;
       color: $primary-400;
       margin: 0;
       text-decoration: line-through;
@@ -288,7 +288,7 @@
     }
     &-link {
       &__title {
-        font-size: 24px;
+        // font-size: 24px;
       }
       &__price {
         font-size: 16px;

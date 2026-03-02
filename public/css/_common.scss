@@ -131,7 +131,7 @@ ul {
 
 .title {
   font-family: $font-en;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
   color: $primary-400;
   padding-bottom: 16px;
@@ -149,7 +149,7 @@ ul {
     transform: translateX(-50%);
   }
   @media screen and (max-width: 991px) {
-    font-size: 36px;
+    font-size: 24px;
   }
 }
 
@@ -587,8 +587,8 @@ ul {
     text-align: center;
   }
   &-title {
-    margin-bottom: 52px;
-    font-size: 32px;
+    margin-bottom: 24px;
+    font-size: 18px;
     font-weight: 500;
   }
   &-logo {
@@ -601,14 +601,13 @@ ul {
     border-width: 6px;
     &-col {
       margin-bottom: 40px;
-      text-align: left;
     }
     &-title {
       margin-bottom: 16px;
       font-size: 24px;
     }
     &-logo {
-      margin: 16px 0 0;
+      margin: 16px auto 0;
       width: 160px;
     }
   }
@@ -617,7 +616,7 @@ ul {
 .contact {
   &-list {
     * {
-      font-size: 24px;
+      // font-size: 18px;
       font-weight: 500;
       line-height: 1.8;
     }
@@ -637,12 +636,12 @@ ul {
   @media screen and (max-width: 991px) {
     &-list {
       * {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
     &-social {
       margin-top: 16px;
-      justify-content: flex-start;
+      // justify-content: flex-start;
       span {
         font-size: 32px;
       }
@@ -654,7 +653,7 @@ ul {
   margin: 0 auto 60px;
   font-weight: 700;
   color: $secondary-700;
-  font-size: 60px;
+  font-size: 40px;
   padding: 0 60px;
   position: relative;
   width: fit-content;
@@ -662,7 +661,7 @@ ul {
   &::before,
   &::after {
     position: absolute;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 700;
     color: $secondary-700;
     top: 50%;
@@ -883,7 +882,7 @@ ul {
     margin-bottom: 28px;
   }
   .title {
-    font-size: 84px;
+    font-size: 52px;
     margin-bottom: 68px;
     padding: 0;
     &::after {

@@ -23,18 +23,10 @@
           ><img src="./public/img/logo.svg" alt=""
         /></a>
         <div class="header__func">
-          <div class="header-func-item header-account">
+          <a href="./login.html" class="header-func-item">
             <span class="icon-account"></span>
-            <p>會員名稱</p>
-            <nav class="header-account-nav">
-              <ul>
-                <li><a href="./account-data.html">會員資料修改</a></li>
-                <li><a href="./chenge-password.html">修改密碼</a></li>
-                <li><a href="./account-order.html">訂單查詢</a></li>
-                <li><a href="">登出會員</a></li>
-              </ul>
-            </nav>
-          </div>
+            <p>會員登入</p>
+          </a>
           <a href="./cart-1.html" class="header-func-item">
             <span class="icon-cart-1"></span>
           </a>
@@ -74,110 +66,111 @@
           </li>
           <li><a href="./membership.html">會員機制</a></li>
           <li><a href="./login.html">加入會員</a></li>
-          <li><a href="./knowledge.html">肽美生活知識庫</a></li>
+          <li><a href="./knowledge.html" class="active">肽美生活知識庫</a></li>
           <li><a href="./qrcode.html">聯絡我們</a></li>
         </ul>
       </nav>
     </header>
     <main class="main">
-      <div class="account">
+      <div class="knowledge-detail">
         <div class="container">
-          <div class="account-sidebar">
-            <nav class="account-sidebar_nav">
+          <h1 class="knowledge-detail__title">私密健康，其實從腸道開始</h1>
+          <p class="knowledge-date">2025-11-10</p>
+          <div class="knowledge-detail__wrapper">
+            <div class="knowledge-detail-content">
+              <p>
+                你知道嗎？<br />
+                多數女性的私密困擾，<br />
+                其實不只是清潔問題，而是「菌叢失衡」造成的。<br />
+                而這個平衡，最根本的關鍵，<br />
+                其實藏在我們的腸道裡。<br />
+                <br />
+                人體內有上百兆個菌，<br />
+                腸道與私密處的菌叢是「相互連動」的生態系統。<br />
+                當腸道好菌減少、壞菌增加時，<br />
+                就容易導致陰道環境改變， pH 值上升、壞菌增生，<br />
+                出現乾癢、異味、感染等不適。<br />
+                反之，當腸道菌叢平衡、益菌充足時，<br />
+                不僅能改善排便順暢、提升免疫力，<br />
+                也能自然穩定私密處環境，<br />
+                讓私密肌膚維持健康弱酸、防護力提升。<br />
+                <br />
+                肽悠生技將「腸道 × 私密處」的雙重關聯納入研發，<br />
+                結合高濃縮蔓越莓與女性專屬益生菌配方，<br />
+                從體內調整菌叢、由內而外維持健康。<br />
+                每天一包，<br />
+                讓好菌在腸道定居、好環境在身體延伸。
+                <br />
+                <br />
+                肽悠生技 TAI YU BIOTECH<br />
+                Balance inside, Confidence outside.<br />
+                「內在平衡，外在自信。」
+              </p>
+            </div>
+            <div class="knowledge-detail-side">
+              <h2>文章分類</h2>
               <ul>
-                <li><a href="./account-data.html">會員資料修改</a></li>
-                <li><a href="./chenge-password.html">修改密碼</a></li>
-                <li><a href="./account-order.html" class="active">訂單查詢</a></li>
-                <li><a href="">登出會員</a></li>
+                <li>
+                  <a href="./knowledge.html"
+                    >私密保養<span class="num">（2）</span></a
+                  >
+                </li>
               </ul>
-            </nav>
+            </div>
           </div>
-          <div class="account-content">
-            <div class="account-order">
-              <div class="container">
-                <table>
-                  <tr>
-                    <th>訂單日期</th>
-                    <th>訂單編號</th>
-                    <th>付款方式</th>
-                    <th>付款金額</th>
-                    <th>訂單狀態</th>
-                    <th>取消訂單</th>
-                  </tr>
-                  <tr>
-                    <td>2026-01-02</td>
-                    <td>123456789</td>
-                    <td>ATM轉帳</td>
-                    <td>1340</td>
-                    <td>未付款, 未出貨, 處理中</td>
-                    <td>
-                      <div class="account-order_func">
-                        <button class="btn btn-alert">取消</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2026-01-02</td>
-                    <td>123456789</td>
-                    <td>ATM轉帳</td>
-                    <td>1340</td>
-                    <td>未付款, 未出貨, 處理中</td>
-                    <td>
-                      <div class="account-order_func">
-                        <button class="btn btn-alert">取消</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2026-01-02</td>
-                    <td>123456789</td>
-                    <td>ATM轉帳</td>
-                    <td>1340</td>
-                    <td>未付款, 未出貨, 處理中</td>
-                    <td>
-                      <div class="account-order_func">
-                        <button class="btn btn-alert">取消</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2026-01-02</td>
-                    <td>123456789</td>
-                    <td>ATM轉帳</td>
-                    <td>1340</td>
-                    <td>未付款, 未出貨, 處理中</td>
-                    <td>
-                      <div class="account-order_func">
-                        <button class="btn btn-alert">取消</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2026-01-02</td>
-                    <td>123456789</td>
-                    <td>ATM轉帳</td>
-                    <td>1340</td>
-                    <td>未付款, 未出貨, 處理中</td>
-                    <td>
-                      <div class="account-order_func">
-                        <button class="btn btn-alert">取消</button>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>2026-01-02</td>
-                    <td>123456789</td>
-                    <td>ATM轉帳</td>
-                    <td>1340</td>
-                    <td>未付款, 未出貨, 處理中</td>
-                    <td>
-                      <div class="account-order_func">
-                        <button class="btn btn-alert">取消</button>
-                      </div>
-                    </td>
-                  </tr>
-                </table>
-              </div>
+        </div>
+      </div>
+      <div class="related-product">
+        <div class="container">
+          <h2 class="related-product__title">相關商品</h2>
+          <div class="row">
+            <div class="col-lg-3 col-6">
+              <a href="./product-deatil.html" class="product-list_item">
+                <div class="product-list_pic">
+                  <img src="./public/img/product-1.webp" alt="" />
+                </div>
+                <h3 class="product-list_title">
+                  [私密清潔]私密洗<br />｜女性｜
+                </h3>
+                <p class="product-list_price">NT$1,180</p>
+                <p class="product-list_origin">NT$1,680</p>
+              </a>
+            </div>
+            <div class="col-lg-3 col-6">
+              <a href="./product-deatil.html" class="product-list_item">
+                <div class="product-list_pic">
+                  <img src="./public/img/product-2.webp" alt="" />
+                </div>
+                <h3 class="product-list_title">
+                  [私密清潔]私密洗<br />｜女性｜
+                </h3>
+                <p class="product-list_price">NT$1,180</p>
+                <p class="product-list_origin">NT$1,680</p>
+              </a>
+            </div>
+            <div class="col-lg-3 col-6">
+              <a href="./product-deatil.html" class="product-list_item">
+                <div class="product-list_pic">
+                  <img src="./public/img/product-3.webp" alt="" />
+                </div>
+                <h3 class="product-list_title">
+                  [私密清潔]私密洗<br />｜女性｜
+                </h3>
+                <p class="product-list_price">NT$1,180</p>
+                <p class="product-list_origin">NT$1,680</p>
+              </a>
+            </div>
+            <div class="col-lg-3 col-6">
+              <a href="./product-deatil.html" class="product-list_item">
+                <div class="product-list_pic">
+                  <img src="./public/img/product-4.webp" alt="" />
+                </div>
+                <h3 class="product-list_title">
+                  [私密清潔]私密洗<br />｜女性｜
+                </h3>
+                <p class="product-list_price">NT$1,180</p>
+                <p class="product-list_origin">NT$1,680</p>
+              </a>
             </div>
           </div>
         </div>

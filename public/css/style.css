@@ -99,7 +99,7 @@ ul {
 
 .title {
   font-family: "Rowdies", sans-serif;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
   color: #c8d286;
   padding-bottom: 16px;
@@ -122,7 +122,7 @@ ul {
 
 @media screen and (max-width: 991px) {
   .title {
-    font-size: 36px;
+    font-size: 24px;
   }
 }
 
@@ -658,8 +658,8 @@ ul {
 }
 
 .footer-title {
-  margin-bottom: 52px;
-  font-size: 32px;
+  margin-bottom: 24px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -676,20 +676,18 @@ ul {
   }
   .footer-col {
     margin-bottom: 40px;
-    text-align: left;
   }
   .footer-title {
     margin-bottom: 16px;
     font-size: 24px;
   }
   .footer-logo {
-    margin: 16px 0 0;
+    margin: 16px auto 0;
     width: 160px;
   }
 }
 
 .contact-list * {
-  font-size: 24px;
   font-weight: 500;
   line-height: 1.8;
 }
@@ -717,13 +715,10 @@ ul {
 
 @media screen and (max-width: 991px) {
   .contact-list * {
-    font-size: 16px;
+    font-size: 14px;
   }
   .contact-social {
     margin-top: 16px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
   .contact-social span {
     font-size: 32px;
@@ -734,7 +729,7 @@ ul {
   margin: 0 auto 60px;
   font-weight: 700;
   color: #425f4c;
-  font-size: 60px;
+  font-size: 40px;
   padding: 0 60px;
   position: relative;
   width: -webkit-fit-content;
@@ -745,7 +740,7 @@ ul {
 
 .title-common::before, .title-common::after {
   position: absolute;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 700;
   color: #425f4c;
   top: 50%;
@@ -1044,7 +1039,7 @@ ul {
 }
 
 .intro-section .title {
-  font-size: 84px;
+  font-size: 52px;
   margin-bottom: 68px;
   padding: 0;
 }
@@ -1443,20 +1438,20 @@ ul {
   margin-bottom: 16px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  font-size: 32px;
+  font-size: 18px;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
 .home-product-link__price {
-  font-size: 26px;
+  font-size: 16px;
   margin-bottom: 0;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .home-product-link__origin {
-  font-size: 26px;
+  font-size: 16px;
   color: #c8d286;
   margin: 0;
   text-decoration: line-through;
@@ -1516,9 +1511,6 @@ ul {
   }
   .home-product-btns {
     display: none;
-  }
-  .home-product-link__title {
-    font-size: 24px;
   }
   .home-product-link__price {
     font-size: 16px;
@@ -2541,10 +2533,10 @@ ul {
 }
 
 .product-list_tag {
-  padding: 12px 16px 12px 24px;
+  padding: 8px 12px;
   background-color: #c8d286;
   color: #fff;
-  font-size: 28px;
+  font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.1em;
   position: absolute;
@@ -2597,7 +2589,7 @@ ul {
 }
 
 .product-list_title {
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 900;
   margin-bottom: 16px;
   line-height: 1.6;
@@ -2605,7 +2597,7 @@ ul {
 
 .product-list_price, .product-list_origin {
   font-weight: 500;
-  font-size: 26px;
+  font-size: 16px;
   margin-bottom: 0;
   line-height: 1.5;
 }
@@ -3060,7 +3052,7 @@ ul {
 .knowledge-detail-content {
   width: calc(100% - 300px);
   font-size: 20px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 2;
   letter-spacing: 0.075em;
   padding-right: 20px;
@@ -3180,7 +3172,6 @@ ul {
 
 .membership-table table th,
 .membership-table table td {
-  width: 20%;
   text-align: center;
 }
 
@@ -3196,13 +3187,13 @@ ul {
 
 .membership-table table td {
   padding: 16px 8px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .membership-table table td.membership-table-title {
   padding: 32px 12px;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 30px;
   letter-spacing: 0.2em;
   text-align: center;
 }
@@ -3228,7 +3219,7 @@ ul {
 }
 
 .membership-table-head__title {
-  font-size: 36px;
+  font-size: 30px;
   margin-bottom: 0;
   font-weight: 500;
 }
@@ -3239,8 +3230,9 @@ ul {
 }
 
 .membership-table-title-mobile {
-  width: 156px;
+  width: calc(105px + 12px);
   background-color: #fff !important;
+  padding-left: 12px;
   top: 2px;
   left: 0;
   position: absolute;
@@ -3286,6 +3278,12 @@ ul {
   background-color: #fff;
 }
 
+@media screen and (min-width: 992px) {
+  .membership-table table td {
+    width: 20%;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .membership-table .container {
     max-width: inherit;
@@ -3305,9 +3303,11 @@ ul {
   }
   .membership-table table td.membership-table-title {
     padding: 16px;
+    font-size: 16px;
   }
   .membership-table-title {
-    width: 156px !important;
+    width: 105px !important;
+    color: #fff;
   }
   .membership-table-head {
     padding: 20px 12px;
@@ -3324,21 +3324,21 @@ ul {
 }
 
 .membership-list li {
-  margin-bottom: 76px;
-  padding-left: 42px;
+  margin-bottom: 24px;
+  padding-left: 24px;
   position: relative;
-  font-size: 36px;
+  font-size: 18px;
   font-weight: 500;
 }
 
 .membership-list li::before {
   position: absolute;
   content: "";
-  width: 22px;
-  height: 22px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: #425f4c;
-  top: 16px;
+  top: 8px;
   left: 0;
 }
 
@@ -3346,7 +3346,7 @@ ul {
   .membership-list li {
     margin-bottom: 36px;
     padding-left: 20px;
-    font-size: 18px;
+    font-size: 16px;
   }
   .membership-list li::before {
     width: 12px;
@@ -3359,8 +3359,8 @@ ul {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto 36px;
-  font-size: 28px;
+  margin: 0 auto 20px;
+  font-size: 18px;
   font-weight: 500;
   padding: 20px 64px;
   border-radius: 28px;
@@ -3391,17 +3391,17 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 36px;
+  font-size: 18px;
   font-weight: 500;
   line-height: 1.7;
 }
 
 .membership-qa-item__title {
-  width: 90px;
+  width: 50px;
 }
 
 .membership-qa-item__content {
-  width: calc(100% - 90px);
+  width: calc(100% - 50px);
 }
 
 .membership-qa__line {
@@ -3512,7 +3512,7 @@ ul {
 
 .step_num {
   margin-bottom: 40px;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 700;
 }
 
@@ -3523,7 +3523,7 @@ ul {
 }
 
 .step_text {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -3608,18 +3608,14 @@ ul {
   }
 }
 
-.term-text {
-  font-size: 14px;
-}
-
 .term-text h4 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 16px;
 }
 
 .term-text h5 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -3681,7 +3677,7 @@ ul {
 .shipping-table table {
   width: 100%;
   min-width: 400px;
-  font-size: 40px;
+  font-size: 24px;
   text-align: center;
 }
 
